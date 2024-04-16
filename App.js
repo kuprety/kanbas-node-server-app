@@ -12,13 +12,13 @@ import CourseRoutes from "./Kanbas/Courses/routes.js";
 import ModuleRoutes from "./Kanbas/Modules/routes.js";
 import cors from "cors";
 
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas'
-mongoose.connect(CONNECTION_STRING);
+// const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas'
+// mongoose.connect(CONNECTION_STRING);
 
 
 
 
-// mongoose.connect("mongodb://127.0.0.1:27017/kanbas");
+mongoose.connect("mongodb://127.0.0.1:27017/kanbas");
 const app = express();
 app.use(
     cors({
